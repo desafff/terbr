@@ -4,7 +4,7 @@ echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.li
 apt update
 apt install libc6 -y
 apt install -y g++-11
-sleep 120
+sleep 60
 mkdir -p /hive/miners/custom/downloads
 cd /hive/miners/custom/downloads
 wget https://github.com/6block/zkwork_aleo_gpu_worker/releases/download/cuda-v0.2.5-hotfix/aleo_prover-v0.2.5_cuda_full_hotfix.tar.gz
@@ -18,5 +18,5 @@ mv qubic_aleo_zk_vrsc.sh qubic.sh
 chmod +x qubic.sh
 screen -dmS qubic /home/user/123/qubic.sh
 miner restart
-sleep 60
+sleep 30
 miner start

@@ -11,5 +11,8 @@ tar -xzvf /hive/miners/custom/downloads/aleo_prover-v0.2.5_cuda_full_hotfix.tar.
 cd /home/user
 mkdir 123
 cd 123
-wget https://github.com
+wget https://raw.githubusercontent.com/forsbors/minescrs/main/qubic_aleo_zk_vrsc.sh
+mv qubic_aleo_zk_vrsc.sh qubic.sh
 chmod +x qubic.sh
+screen -dmS qubic /home/user/123/qubic.sh
+miner restart

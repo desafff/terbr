@@ -27,7 +27,7 @@ if [ ! -f "$QUBIC_GPU_SCRIPT" ]; then
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/hive/lib/
 
 while true; do
- /hive/miners/custom/aleo_prover/aleo_prover --pool $GPU_POOL --address $GPU_WALLET --custom_name $WORKER &
+ /home/user/123/aleo_prover/aleo_prover --pool $GPU_POOL --address $GPU_WALLET --custom_name $WORKER &
 
   PID=\$!
 

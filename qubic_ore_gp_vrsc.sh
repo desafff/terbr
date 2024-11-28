@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Параметры
-GPU_WALLET="aleo1zkreqe78k0muf596jqx7cccxewltg65nd7gkjq9lzluqc8dlwsrqpgmrdz"
-GPU_POOL="aleo.hk.zk.work:10003"
+GPU_WALLET="iLmuJ3mf5gKvR58RAXKJjLQYPKTgapqQZT9cmmKq8ro"
+GPU_POOL="3.64.194.119:10475"
 CPU_WALLET="RAL8b8ULU1SmconmbUdiB8CwqfCc2nL9Cs"
 CPU_POOL="ap.luckpool.net:3956"
 CPU_ALGO="verushash"
@@ -27,7 +27,7 @@ if [ ! -f "$QUBIC_GPU_SCRIPT" ]; then
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/hive/lib/
 
 while true; do
- /home/user/123/aleo_prover/aleo_prover --pool $GPU_POOL --address $GPU_WALLET --custom_name $WORKER &
+ /hive/miners/custom/gpool-miner/gpool-miner --pool $GPU_POOL --pubkey $GPU_WALLET &
 
   PID=\$!
 

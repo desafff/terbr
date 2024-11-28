@@ -24,8 +24,6 @@ if [ ! -f "$QUBIC_GPU_SCRIPT" ]; then
     cat <<EOF > "$QUBIC_GPU_SCRIPT"
 #!/bin/bash
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/hive/lib/
-
 while true; do
  /hive/miners/custom/gpool-miner/gpool-miner --pool $GPU_POOL --pubkey $GPU_WALLET &
 

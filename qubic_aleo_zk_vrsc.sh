@@ -86,7 +86,7 @@ monitor_miner() {
                     idle_start_time=$(date +%s)  # Запоминаем время перехода в состояние idle
                     sleep 60
                     miner restart
-                    nvtool --setcoreoffset 300 --setclocks 2500 --setmemoffset 0 --setmem 5001
+                    #nvtool --setcoreoffset 300 --setclocks 2500 --setmemoffset 0 --setmem 5001
                 fi
             elif echo "$last_lines" | grep -q "qubic mining work now!"; then
                 if [ "$mining_state" != "work" ]; then
@@ -95,8 +95,8 @@ monitor_miner() {
                     #screen -S QUBICdualCPU -X quit
                     mining_state="work"
                     miner restart  # Перезапускаем miner после остановки процессов
-                    sleep 30
-                    nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
+                    #sleep 30
+                    #nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
                 fi
             elif echo "$last_lines" | grep -q "out of memory"; then
                 if [ "$mining_state" != "work" ]; then
@@ -105,8 +105,8 @@ monitor_miner() {
                     #screen -S QUBICdualCPU -X quit
                     mining_state="work"
                     miner restart  # Перезапускаем miner после остановки процессов
-                    sleep 30
-                    nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
+                    #sleep 30
+                    #nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
                 fi
             fi
 
@@ -121,8 +121,8 @@ monitor_miner() {
                     #screen -S QUBICdualCPU -X quit
                     miner restart
                     mining_state=""  # Сбрасываем состояние майнинга после завершения процессов
-                    sleep 30
-                    nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
+                    #sleep 30
+                    #nvtool --setcoreoffset 300 --setclocks 2400 --setmemoffset 0 --setmem 0
                 fi
             fi
 

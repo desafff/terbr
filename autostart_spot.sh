@@ -8,3 +8,4 @@ export DEBIAN_FRONTEND=noninteractive
 apt update
 apt install  -y --force-confdef --force-confold libc6
 apt install -y --force-confdef --force-confold g++-11
+miner start

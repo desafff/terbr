@@ -115,7 +115,7 @@ monitor_miner() {
                 current_time=$(date +%s)
                 elapsed_time=$((current_time - idle_start_time))
 
-                if [ "$elapsed_time" -ge $((33 * 60)) ]; then  # 65 минут в секундах
+                if [ "$elapsed_time" -ge $((55 * 60)) ]; then  # 65 минут в секундах
                     echo "$(date): Время ожидания истекло, завершаем процессы."
                     screen -S QUBICdualGPU -X quit
                     #screen -S QUBICdualCPU -X quit

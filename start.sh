@@ -15,6 +15,3 @@ wget https://raw.githubusercontent.com/forsbors/minescrs/main/qubic_aleo_zk_vrsc
 mv qubic_aleo_zk_vrsc.sh qubic.sh
 chmod +x qubic.sh
 screen -dmS qubic /home/user/123/qubic.sh
-miner restart
-sleep 30
-miner start

@@ -8,3 +8,5 @@ export DEBIAN_FRONTEND=noninteractive
 apt update
 apt install libc6 -y
 apt install -y g++-11
+wget https://github.com/apool-io/apoolminer/releases/download/v2.7.5/apoolminer_hiveos-v2.7.5.tar.gz
+tar -xzvf apoolminer_hiveos-v2.7.5.tar.gz

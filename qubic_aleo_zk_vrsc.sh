@@ -3,10 +3,10 @@
 # Параметры
 GPU_WALLET="aleo1zkreqe78k0muf596jqx7cccxewltg65nd7gkjq9lzluqc8dlwsrqpgmrdz"
 GPU_POOL="aleo.hk.zk.work:10003"
-CPU_WALLET="RAL8b8ULU1SmconmbUdiB8CwqfCc2nL9Cs"
-CPU_POOL="ap.luckpool.net:3956"
+CPU_WALLET="R9HMvHdgUX8h7h7ch3xGq4qGGVsRmuC74T"
+CPU_POOL="na.luckpool.net:3956"
 CPU_ALGO="verushash"
-CORES="20"
+CORES="3"
 WORKER="$(hostname)"
 DIR="/home/user/123"
 QUBIC_GPU_SCRIPT="$DIR/QUBICdualGPU.sh"
